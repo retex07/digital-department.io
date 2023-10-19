@@ -1,0 +1,60 @@
+
+/* Figma name: Desk. Типографика Cайт 1/Дек. текст/3 Цитата */
+.page-title {
+    color: var(--color-dark);
+    text-align: center;
+    font-family: Lora, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    
+    /* Figma name: Desk. Типографика Cайт 1/Дек. текст/3 Цитата */
+    @media screen and (width >= 1920px) {
+        font-size: 45px;
+    }
+
+    /* Figma name: Desk. Типографика Cайт 1/Дек. текст/4 Цитата */
+    @media screen and (max-width: 1920px) {
+        font-size: 35px;
+    }
+
+    /* Figma name: Mob. Типографика Сайт 1/Дек. текст/3 цитата */
+    @media screen and (max-width: 1340px) {
+        font-size: 30px;
+    }
+
+    /* Figma name: Mob. Типографика Сайт 1/Дек. текст/4 цитата */
+    @media screen and (max-width: 768px) {
+        font-size: 13px;
+    }
+}
+
+/* Figma name: Desk. Типографика Cайт 1/Ссылки. Навигация/Новигация/Навигация header */
+.link {
+    font-family: "Open Sans", sans-serif;
+    color: var(--color-derk-text);
+    font-weight: 600;
+    line-height: 25px;
+
+    /* Figma name: Desk. Типографика Cайт 1/Ссылки. Навигация/Новигация/Навигация header */
+    @media screen and (width >= 1920px) {
+        font-size: 18px;
+    }
+
+    /* Figma name: None */
+    @media screen and (max-width: 1340px) {
+        font-size: 16px;
+    }
+}
+
+/* Figma name: Desk. Типографика Cайт 1/Кнопки/1 Кнопка */
+.button-text {
+    text-align: center;    
+    color: var(--color-derk-text);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

@@ -1,0 +1,94 @@
+body,
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+.body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.375;
+    color: var(--color-dark);
+}
+
+.btn {
+    display: inline-flex;
+    padding: 15px 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__user-btn { 
+    text-decoration: none;
+    border: 1px solid var(--color-dark);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--color-background-header);
+    backdrop-filter: blur(10px);
+
+    @media screen and (width >= 1920px) {
+        padding: 0 293px;
+        height: 147px;
+    }
+    @media screen and (max-width: 1920px) {
+        padding: 0 40px;
+        height: 111px;
+    }
+    @media screen and (max-width: 1340px) {
+        padding: 0 30px;
+        height: 111px;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 0;
+        height: 70px;
+    }
+}
+
+.header__logo,
+.header__logo-img {
+    height: 100%;
+}
+
+.header__nav {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 25px;
+}
+
+.header__nav-link {
+    text-decoration: none;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+
+    gap: 70px;
+    margin: 100px 0;
+}
+
+.home__main-header {
+    @media screen and (width >= 1920px) {
+        margin: 0 486px;
+    }
+    @media screen and (max-width: 1920px) {
+        margin: 0 301px;
+    }
+    @media screen and (max-width: 1340px) {
+        margin: 0 68px;
+    }
+    @media screen and (max-width: 768px) {
+        margin: 0 23px;
+    }
+}

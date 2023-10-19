@@ -2,14 +2,46 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/styles.css?ver=0">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/typography.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta
       name="description"
       content="Цифровая кафедра: Frontend-разработка"
     />
-    <title>Frontend-разработка</title>
+    <title>Lenni Art</title>
   </head>
-  <body>
-    <h1>Добро пожаловать на мой репозиторий!</h1>
-    <p>Это параграф.</p>
+  <body class="body">
+    <header class="header">
+      <a href="index.html" class="header__logo">
+        <img class="header__logo-img" src="static/images/logo.svg" alt="logo" />
+      </a>
+      <nav class="header__nav">
+        <a href="#" class="link header__nav-link">Мероприятия</a>
+        <a href="#" class="link header__nav-link">Блог</a>
+        <a href="#" class="link header__nav-link">О нас</a>
+        <a href="#" class="link header__nav-link">Контакты</a>
+      </nav>
+      <a href="#" class="btn header__user-btn button-text">Войти</a>
+    </header>
+    <main class="main">
+      <div class="home">
+        <header class="main-header">
+          <h1 class="page-title home__main-header">арт - пространство</h1>
+          <img src="static/images/lenni.svg" alt="lenni" />
+          <h1 class="page-title home__main-header">для людей, горящих сердец и делом место для настоящего</h1>
+        </header>
+        <section class="offers home__offers"></section>
+        <section class="about home__about"></section>
+        <section class="upcoming home__upcoming"></section>
+        <section class="listing home__listing"></section>
+        <section class="contacts home__contacts"></section>
+        <div class="doit home__doit"></div>
+      </div>
+    </main>
+    <footer class="footer"></footer>
   </body>
 </html>
