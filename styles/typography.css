@@ -1,3 +1,11 @@
+.body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.375;
+    color: var(--color-dark);
+}
 
 /* Figma name: Desk. Типографика Cайт 1/Дек. текст/3 Цитата */
 .page-title {
@@ -30,6 +38,121 @@
     }
 }
 
+/* Figma name: Desk. Типографика Cайт 1/Заголовок/h2 Заголовок */
+.title {
+    color: var(--color-white);
+    text-align: center;
+    font-family: Lora, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+
+    /* Figma name: Desk. Типографика Cайт 1/Заголовок/h2 Заголовок */
+    @media screen and (width >= 1340px) {
+        font-size: 45px;
+    }
+
+    /* Figma name: Mob. Типографика Сайт 1/Заголовок/h2 Заголовок */
+    @media screen and (max-width: 1340px) {
+        font-size: 24px;
+    }
+
+    /* Figma name: Mob. Типографика Сайт 1/Заголовок/h5 Заголовок */
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+/* Figma name: Desk. Типографика Cайт 1/Заголовок/h3 Заголовок */
+.title-secondary {
+    color: var(--color-white);
+    text-align: center;
+    font-family: Lora, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 136.364% */
+    letter-spacing: 0.44px;
+    text-transform: uppercase;
+
+    /* Figma name: Desk. Типографика Cайт 1/Заголовок/h3 Заголовок */
+    @media screen and (width >= 768px) {
+        font-size: 22px;
+    }
+
+    /* Figma name: Mob. Типографика Сайт 1/Заголовок/h5 Заголовок */
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+/* Figma name: Desk. Типографика Cайт 1/Подзаголовок/2 Подзаголовок */
+.subtitle {
+    color: var(--color-dark);
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    /* Figma name: Desk. Типографика Cайт 1/Подзаголовок/2 Подзаголовок */
+    @media screen and (width >= 1340px) {
+        font-size: 24px;
+    }
+
+    /* Figma name: Desk. Типографика Cайт 1/Подзаголовок/3 Подзаголовок */
+    @media screen and (max-width: 1340px) {
+        font-size: 20px;
+    }
+
+    /* Figma name: Mob. Типографика Сайт 1/Подзаголовок/3 Подзаголовок */
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+/* Figma name: Desk. Типографика Cайт 1/Текст/2 Текст */
+.text {
+    color: var(--color-dark);
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    /* Figma name: Desk. Типографика Cайт 1/Подзаголовок/2 Подзаголовок */
+    @media screen and (width >= 1340px) {
+        font-size: 16px;
+    }
+
+    /* Figma name: Mob. Типографика Сайт 1/Текст/1 Текст */
+    @media screen and (max-width: 1340px) {
+        font-size: 16px;
+    }
+
+    /* Figma name: Mob. Типографика Сайт 1/Текст/2 Текст */
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+/* Figma name: Desk. Типографика Cайт 1/Цифры. Даты/2 Дата */
+.date-text {
+    color: var(--color-dark);
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+    /* Figma name: Desk. Типографика Cайт 1/Подзаголовок/2 Подзаголовок */
+    @media screen and (width >= 1340px) {
+        font-size: 14px;
+    }
+
+    /* Figma name: Mob. Типографика Сайт 1/Цифры. Даты/2 Дата */
+    @media screen and (max-width: 1340px) {
+        font-size: 16px;
+    }
+}
+
 /* Figma name: Desk. Типографика Cайт 1/Ссылки. Навигация/Новигация/Навигация header */
 .link {
     font-family: "Open Sans", sans-serif;
@@ -52,7 +175,7 @@
 .button-text {
     text-align: center;    
     color: var(--color-derk-text);
-    font-family: Open Sans;
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
