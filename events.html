@@ -1,117 +1,110 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/variables.css">
-    <link rel="stylesheet" href="styles/typography.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <meta
-      name="description"
-      content="Цифровая кафедра: Frontend-разработка"
-    />
-    <title>Lenni Art</title>
-  </head>
-  <body class="body">
-    <header class="header">
-      <a href="index.html" class="header__logo">
-        <img class="header__logo-img" src="static/images/logo.svg" alt="logo" />
-      </a>
-      <nav class="header__nav">
-        <a href="events.html" class="link header__nav-link__active">Мероприятия</a>
-        <a href="#" class="link header__nav-link">Блог</a>
-        <a href="#" class="link header__nav-link">О нас</a>
-        <a href="#" class="link header__nav-link">Контакты</a>
-      </nav>
-      <a href="#" class="btn header__user-btn button-text">Войти</a>
-    </header>
-    <main class="main">
-      <div class="events">
-        <header class="main-header events__main-header">
-            <button class="btn-overview">
-                <h3 class="title">мероприятия</h1>
-            </button>
-        </header>
-        <section class="events__articles">
-            <article class="article">
-                <img class="article-image" src="static/images/nirvana.png" alt="nirvana" />
-                <div class="article__info">
-                    <h3 class="subtitle article-subtitle">Собираемся и слушаем альбом Nirvana. Nirvana</h3>
-                    <p class="text">Один из самых популярных подкастов в мире. 
-                        В нём авторы объясняют, как устроены разные вещи.</p>
-                    <time class="date-text">07.12.2022 | начало 18.00</time>
-                </div>
-            </article>
-            <article class="article">
-                <img class="article-image" src="static/images/howStuffWorks.png" alt="howStuffWorks" />
-                <div class="article__info">
-                    <h3 class="subtitle article-subtitle">Есть тема, нужно обсудить с HowStuffWorks</h3>
-                    <p class="text">Это третий альбом группы, выпущенный после смерти 
-                        Курта Кобейна и первый, содержащий 
-                        студийный материал.</p>
-                    <time class="date-text">14.12.2022 | начало 18.30</time>
-                </div>
-            </article>
-            <article class="article">
-                <img class="article-image" src="static/images/sade.png" alt="sade" />
-                <div class="article__info">
-                    <h3 class="subtitle article-subtitle">Вечер | The Best of Sade</h3>
-                    <p class="text">Музыка группы имеет эклектичный характер, 
-                        сочетая в себе элементы музыки соул, джаза,
-                        ритм-блюза и фанка.</p>
-                    <time class="date-text">16.12.2022 | начало 20.00</time>
-                </div>
-            </article>
-            <article class="article">
-                <img class="article-image" src="static/images/malevich.png" alt="malevich" />
-                <div class="article__info">
-                    <h3 class="subtitle article-subtitle">Выставка Малевича в Томске</h3>
-                    <p class="text">Это будет самая полная выставка с 1988 года, 
-                        того времени, когда впервые заговорили о Малевиче. 
-                        Экспозиция займёт два этажа павильона.</p>
-                    <time class="date-text">23.12.2022 | начало 20.00</time>
-                </div>
-            </article>
-            <article class="article">
-                <img class="article-image" src="static/images/tatler.png" alt="tatler" />
-                <div class="article__info">
-                    <h3 class="subtitle article-subtitle">Мастер — класс по студийной съемке от Tatler</h3>
-                    <p class="text">Фотографы издания расскажут, как им удается 
-                        создавать потрясающие кадры и что может испортить весь процесс.</p>
-                    <time class="date-text">25.12.2022 | начало 13.00</time>
-                </div>
-            </article>
-            <article class="article">
-                <img class="article-image" src="static/images/hatters.png" alt="hatters" />
-                <div class="article__info">
-                    <h3 class="subtitle article-subtitle">Повесилимся на славу на концерте The Hatters</h3>
-                    <p class="text">Российская джипси-фолк-рок группа, основанная в 2016 
-                        году в Санкт-Петербурге. В основной состав группы входят 
-                        Юрий Музыченко</p>
-                    <time class="date-text">27.12.2022 | начало 10.00</time>
-                </div>
-            </article>
-        </section>
-        <div class="article__drop-down">
-            <span>Показать еще</span>
-            <img src="static/images/showDown.svg" alt="showDown" />
-        </div>
-        <section class="additional-services">
-            <header class="additional-services__header">
-                <button class="btn-overview additional-services-btn">
-                    <h3 class="title-secondary additional-services-title">дополнительные услуги</h1>
-                </button>
-            </header>
-        </section>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/styles.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Цифровая кафедра: Frontend-разработка" />
+  <title>Lenni Art</title>
+</head>
+
+<body class="body">
+  <header class="header">
+    <a href="index.html" class="header__logo">
+      <svg class="header__logo-img" width="202" height="147">
+        <use xlink:href="assets/icons/symbols.svg#logo"></use>
+      </svg>
+    </a>
+    <nav class="header__nav">
+      <a href="events.html" class="link header__nav-link">Мероприятия</a>
+      <a href="#" class="link header__nav-link">Блог</a>
+      <a href="#" class="link header__nav-link">О нас</a>
+      <a href="#" class="link header__nav-link">Контакты</a>
+    </nav>
+    <a href="#" class="btn header__user-btn button-text">Войти</a>
+  </header>
+  <main class="main">
+    <div class="events">
+      <header class="main-header events__main-header">
+        <button class="btn-overview">
+          <h3 class="title">мероприятия</h1>
+        </button>
+      </header>
+      <section class="events__articles">
+        <article class="event-card">
+          <img class="event-card__image" src="assets/images/events/nirvana.png" alt="nirvana" />
+          <div class="event-card__info">
+            <h3 class="subtitle event-card__subtitle">Собираемся и слушаем альбом Nirvana. Nirvana</h3>
+            <p class="text">Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.</p>
+            <time class="date-text" datetime="2022-12-07T18:00">07.12.2022 | начало 18.00</time>
+          </div>
+        </article>
+        <article class="event-card">
+          <img class="event-card__image" src="assets/images/events/howStuffWorks.png" alt="howStuffWorks" />
+          <div class="event-card__info">
+            <h3 class="subtitle event-card__subtitle">Есть тема, нужно обсудить с HowStuffWorks</h3>
+            <p class="text">Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.</p>
+            <time class="date-text" datetime="2022-12-14T18:30">14.12.2022 | начало 18.30</time>
+          </div>
+        </article>
+        <article class="event-card">
+          <img class="event-card__image" src="assets/images/events/sade.png" alt="sade" />
+          <div class="event-card__info">
+            <h3 class="subtitle event-card__subtitle">Вечер | The Best of Sade</h3>
+            <p class="text">Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.</p>
+            <time class="date-text" datetime="2022-12-16T20:00">16.12.2022 | начало 20.00</time>
+          </div>
+        </article>
+        <article class="event-card">
+          <img class="event-card__image" src="assets/images/events/malevich.png" alt="malevich" />
+          <div class="event-card__info">
+            <h3 class="subtitle event-card__subtitle">Выставка Малевича в Томске</h3>
+            <p class="text">Это будет самая полная выставка с 1988 года, того времени, когда впервые заговорили о Малевиче. Экспозиция займёт два этажа павильона.</p>
+            <time class="date-text" datetime="2022-12-23T20:00">23.12.2022 | начало 20.00</time>
+          </div>
+        </article>
+        <article class="event-card">
+          <img class="event-card__image" src="assets/images/events/tatler.png" alt="tatler" />
+          <div class="event-card__info">
+            <h3 class="subtitle event-card__subtitle">Мастер — класс по студийной съемке от Tatler</h3>
+            <p class="text">Фотографы издания расскажут, как им удается создавать потрясающие кадры и что может испортить весь процесс.</p>
+            <time class="date-text" datetime="2022-12-25T13:00">25.12.2022 | начало 13.00</time>
+          </div>
+        </article>
+        <article class="event-card">
+          <img class="event-card__image" src="assets/images/events/hatters.png" alt="hatters" />
+          <div class="event-card__info">
+            <h3 class="subtitle event-card__subtitle">Повесилимся на славу на концерте The Hatters</h3>
+            <p class="text">Российская джипси-фолк-рок группа, основанная в 2016 году в Санкт-Петербурге. В основной состав группы входят Юрий Музыченко</p>
+            <time class="date-text" datetime="2022-12-27T10:00">27.12.2022 | начало 10.00</time>
+          </div>
+        </article>
+      </section>
+      <div class="events__drop-down">
+        <span>Показать еще</span>
+        <svg class="header__logo-img">
+          <use xlink:href="assets/icons/symbols.svg#showDown"></use>
+        </svg>
       </div>
-    </main>
-    <footer class="footer">
-        <div class="footer__wrapper">
-            <div class="footer__lines">
-            </div>
-        </div>
-    </footer>
-  </body>
+      <section class="additional-services">
+        <header class="additional-services__header">
+          <button class="btn-overview additional-services__btn">
+            <h3 class="title-secondary additional-services__title">дополнительные услуги</h1>
+          </button>
+        </header>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__lines">
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

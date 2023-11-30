@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/variables.css">
-    <link rel="stylesheet" href="styles/typography.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <meta
-      name="description"
-      content="Цифровая кафедра: Frontend-разработка"
-    />
-    <title>Lenni Art</title>
-  </head>
-  <body class="body">
-    <header class="header">
-      <a href="index.html" class="header__logo">
-        <img class="header__logo-img" src="static/images/logo.svg" alt="logo" />
-      </a>
-      <nav class="header__nav">
-        <a href="events.html" class="link header__nav-link">Мероприятия</a>
-        <a href="#" class="link header__nav-link">Блог</a>
-        <a href="#" class="link header__nav-link">О нас</a>
-        <a href="#" class="link header__nav-link">Контакты</a>
-      </nav>
-      <a href="#" class="btn header__user-btn button-text">Войти</a>
-    </header>
-    <main class="main">
-      <div class="home">
-        <header class="main-header">
-          <h1 class="page-title home__main-header">арт - пространство</h1>
-          <img src="static/images/lenni.svg" alt="lenni" />
-          <h1 class="page-title home__main-header">для людей, горящих сердец и делом место для настоящего</h1>
-        </header>
-        <section class="offers home__offers"></section>
-        <section class="about home__about"></section>
-        <section class="upcoming home__upcoming"></section>
-        <section class="listing home__listing"></section>
-        <section class="contacts home__contacts"></section>
-        <div class="doit home__doit"></div>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/styles.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Цифровая кафедра: Frontend-разработка" />
+  <title>Lenni Art</title>
+</head>
+
+<body class="body">
+  <header class="header">
+    <a href="index.html" class="header__logo">
+      <svg class="header__logo-img" width="202" height="147">
+        <use xlink:href="assets/icons/symbols.svg#logo"></use>
+      </svg>
+    </a>
+    <nav class="header__nav">
+      <a href="events.html" class="link header__nav-link">Мероприятия</a>
+      <a href="#" class="link header__nav-link">Блог</a>
+      <a href="#" class="link header__nav-link">О нас</a>
+      <a href="#" class="link header__nav-link">Контакты</a>
+    </nav>
+    <a href="#" class="btn header__user-btn button-text">Войти</a>
+  </header>
+  <main class="main">
+    <div class="home">
+      <header class="main-header">
+        <h1 class="page-title home__main-header">арт - пространство</h1>
+        <div class="home__img-lenni">
+          <svg>
+            <use xlink:href="assets/icons/symbols.svg#lenni"></use>
+          </svg>
+        </div>
+        <h1 class="page-title home__main-header">для людей, горящих сердец и делом место для настоящего</h1>
+      </header>
+      <section class="offers home__offers"></section>
+      <section class="about home__about"></section>
+      <section class="upcoming home__upcoming"></section>
+      <section class="listing home__listing"></section>
+      <section class="contacts home__contacts"></section>
+      <div class="doit home__doit"></div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__lines">
       </div>
-    </main>
-    <footer class="footer"></footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
