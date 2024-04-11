@@ -37,7 +37,7 @@
       <header class="main-header home__main-header">
         <h1 class="main-header__title"> АРТ-пространство</h1>
         <picture class="main-header__picture">
-          <img src="assets/images/LENNI.svg" class="main-header__img">
+          <img src="assets/images/LENNI.svg" class="main-header__img" alt="lenni">
         </picture>
         <p class="main-header__text">ДЛЯ ЛЮДЕЙ, ГОРЯЩИХ СЕРДЕЦ И ДЕЛОМ
           <br> МЕСТО ДЛЯ НАСТОЯЩЕГО
@@ -88,7 +88,7 @@
         <h2 class="about__section-title section-title">Мероприятия</h2>
         <div class="upcoming__events-list ">
           <!-- prettier-ignore -->
-          <article class="event-card  listing__event-card">
+          <article class="event-card  upcoming__event-card">
             <a href="#" class="event-card__link">
               <picture class="event-card__picture">
                 <img src="assets/images/nirvana.jpg" alt="nirvana" class="event-card__img" />
@@ -98,7 +98,7 @@
               <time datetime="2022-12-07T18:00" class="event-card__time">07.12.2022 | начало 18.00</time>
             </a>
           </article>
-          <article class="event-card  listing__event-card">
+          <article class="event-card  upcoming__event-card">
             <a href="#" class="event-card__link">
               <picture class="event-card__picture">
                 <img src="assets/images/stuff.jpg" alt="stuff" class="event-card__img" />
@@ -108,7 +108,7 @@
               <time datetime="2022-12-14T18:30" class="event-card__time">14.12.2022 | начало 18.30</time>
             </a>
           </article>
-          <article class="event-card  listing__event-card">
+          <article class="event-card  upcoming__event-card">
             <a href="#" class="event-card__link">
               <picture class="event-card__picture">
                 <img src="assets/images/sade.jpg" alt="sade" class="event-card__img" />
@@ -118,6 +118,20 @@
               <time datetime="2022-12-16T20:00" class="event-card__time">16.12.2022 | начало 20.00</time>
             </a>
           </article>
+        </div>
+        <div class="upcoming__actions">
+          <svg class="link__icon" width="91" height="65">
+            <use xlink:href="assets/icons/symbols.svg#showLeft"></use>
+          </svg>
+          <svg class="link__icon" width="99" height="2">
+            <use xlink:href="assets/icons/symbols.svg#list"></use>
+          </svg>
+          <svg class="link__icon" width="91" height="65">
+            <use xlink:href="assets/icons/symbols.svg#showRight"></use>
+          </svg>
+        </div>
+        <div class="upcoming__links">
+          <a href="#" class="upcoming__link link">Смотреть все</a>
         </div>
       </section>
       <section class="listing home__listing">
@@ -239,7 +253,9 @@
       <div class="doit home__doit"></div>
     </div>
   </main>
-
+  <picture class="main-header__picture">
+    <img src="assets/images/quote.svg" class="main-header__img" alt="quote">
+  </picture>
   <footer class="page-footer">
     <div class="page-footer__container">
       <div class="page-footer__border"></div>
@@ -265,6 +281,29 @@
             </span>
           </label>
         </form>
+      </div>
+      <div class="page-footer__about">
+        <div class="page-footer__pp">
+          <p>© Millennials 2022</p>
+          <div class="page-footer__pp-actions">
+            <h4>Политика конфиденциальности</h4>
+            <h4>Cookies</h4>
+          </div>
+        </div>
+        <div class="page-footer__contacts">
+          <svg class="link__icon" width="58" height="58">
+            <use xlink:href="assets/icons/symbols.svg#insta"></use>
+          </svg>
+          <svg class="link__icon" width="58" height="58">
+            <use xlink:href="assets/icons/symbols.svg#vk"></use>
+          </svg>
+        </div>
+        <div class="page-footer__description">
+          <p>Создание и продвижение</p>
+          <svg class="link__icon" width="56" height="17">
+            <use xlink:href="assets/icons/symbols.svg#tagree"></use>
+          </svg>
+        </div>
       </div>
     </div>
   </footer>
