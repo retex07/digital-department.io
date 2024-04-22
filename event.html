@@ -431,30 +431,32 @@
           <a class="page-footer__nav-link">Наши проекты</a>
           <a class="page-footer__nav-link">Контакты</a>
         </nav>
-        <form class="page-footer__form subscribe">
+        <form class="page-footer__form subscribe" action="https://jsonplaceholder.typicode.com/posts" method="post" id="js-subscribeForm">
           <h4 class="subscribe__title">Подпишись и будь в курсе происходящего</h4>
           <div class="subscribe__wrapper">
-            <input type="email" name="email" placeholder="Email" class="subscribe__input" required />
+            <div class="subscribe__input-block">
+              <input id="js-subscribeEmail" type="email" name="email" placeholder="Email" class="subscribe__input" required />
+            </div>
             <button type="submit" class="subscribe__submit">Подписаться</button>
           </div>
           <label class="subscribe__check check">
-            <input type="checkbox" class="check__input" name="agree" required />
-            <span class="check__mark"></span>
             <span class="check__label">
               Согласен на обработку персональных данных
             </span>
+            <input type="checkbox" class="check__input" name="agree" required />
+            <span class="check__mark"></span>
           </label>
         </form>
       </div>
       <div class="page-footer__about">
-        <div class="page-footer__pp">
+        <div class="page-footer__pp page-footer__down-block">
           <p>© Millennials 2022</p>
           <div class="page-footer__pp-actions">
             <h4>Политика конфиденциальности</h4>
             <h4>Cookies</h4>
           </div>
         </div>
-        <div class="page-footer__contacts">
+        <div class="page-footer__contacts page-footer__down-block">
           <svg class="link__icon" width="58" height="58">
             <use xlink:href="assets/icons/symbols.svg#insta"></use>
           </svg>
@@ -462,7 +464,7 @@
             <use xlink:href="assets/icons/symbols.svg#vk"></use>
           </svg>
         </div>
-        <div class="page-footer__description">
+        <div class="page-footer__description page-footer__down-block">
           <p>Создание и продвижение</p>
           <svg class="link__icon" width="56" height="17">
             <use xlink:href="assets/icons/symbols.svg#tagree"></use>
