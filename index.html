@@ -18,16 +18,16 @@
 
   <header class="page-header">
     <div class="page-header__container">
-      <a href="#" class="page-header__logo">
+      <a href="index.html" class="page-header__logo">
         <svg class="page-header__logo-icon" width="202" height="147" viewBox="0 0 202 147">
           <use xlink:href="assets/icons/symbols.svg#logo"></use>
         </svg>
       </a>
       <nav class="page-header__nav">
-        <a href="#" class="page-header__nav-link">Мероприятия</a>
-        <a href="#" class="page-header__nav-link">Блог</a>
-        <a href="#" class="page-header__nav-link">О нас</a>
-        <a href="#" class="page-header__nav-link">Контакты</a>
+        <a href="events.html" class="page-header__nav-link">Мероприятия</a>
+        <a href="index.html#blog" class="page-header__nav-link">Блог</a>
+        <a href="index.html#about" class="page-header__nav-link">О нас</a>
+        <a href="index.html#contacts" class="page-header__nav-link">Контакты</a>
 
         <div class="page-header__nav-user">
           <a href="#" class="page-header__nav-user-link">
@@ -72,7 +72,7 @@
           <div class="btn offers__btn btn--opacity">Стать арендатором</div>
         </div>
       </section>
-      <section class="about home__about">
+      <section class="about home__about" id="about">
         <div class="about__container">
           <h2 class="about__section-title section-title"> о нас</h2>
           <div class="about__block">
@@ -114,7 +114,7 @@
               <div class="swiper-slide">
                 <!-- prettier-ignore -->
                 <article class="event-card  upcoming__event-card">
-                  <a href="#" class="event-card__link">
+                  <a href="event.html" class="event-card__link">
                     <picture class="event-card__picture">
                       <img src="assets/images/nirvana.jpg" alt="nirvana" class="event-card__img" />
                     </picture>
@@ -127,7 +127,7 @@
               <div class="swiper-slide">
                 <!-- prettier-ignore -->
                 <article class="event-card  upcoming__event-card">
-                  <a href="#" class="event-card__link">
+                  <a href="event.html" class="event-card__link">
                     <picture class="event-card__picture">
                       <img src="assets/images/stuff.jpg" alt="stuff" class="event-card__img" />
                     </picture>
@@ -140,7 +140,7 @@
               <div class="swiper-slide">
                 <!-- prettier-ignore -->
                 <article class="event-card  upcoming__event-card">
-                  <a href="#" class="event-card__link">
+                  <a href="event.html" class="event-card__link">
                     <picture class="event-card__picture">
                       <img src="assets/images/sade.jpg" alt="sade" class="event-card__img" />
                     </picture>
@@ -153,7 +153,7 @@
               <div class="swiper-slide">
                 <!-- prettier-ignore -->
                 <article class="event-card  upcoming__event-card">
-                  <a href="#" class="event-card__link">
+                  <a href="event.html" class="event-card__link">
                     <picture class="event-card__picture">
                       <img src="assets/images/nirvana.jpg" alt="nirvana" class="event-card__img" />
                     </picture>
@@ -181,7 +181,7 @@
           <a href="#" class="upcoming__link link">Смотреть все</a>
         </div>
       </section>
-      <section class="listing home__listing">
+      <section class="listing home__listing" id="blog">
         <h2 class="listing__title section-title">Блог</h2>
 
         <div class="listing__article-list">
@@ -245,7 +245,7 @@
         </div>
         <a href="#" class="listing__link link">Смотреть все</a>
       </section>
-      <section class="contacts home__contacts">
+      <section class="contacts home__contacts" id="contacts">
         <div class="contacts-container">
           <h2 class="contacts__title section-title">Контакты</h2>
           <div class="contacts__wrapper">
@@ -288,7 +288,6 @@
                   <a href="mailto:hi@tagree.ru" class="contacts-item__info">hi@tagree.ru</a>
                 </div>
               </div>
-
             </div>
             <div class="contacts__map-wrapper">
               <div id="js-contactsMap" class="contacts__map"></div>
@@ -308,11 +307,11 @@
       <div class="page-footer__border"></div>
       <div class="page-footer__wrapper">
         <nav class="page-footer__nav">
-          <a class="page-footer__nav-link">Календарь мероприятий</a>
-          <a class="page-footer__nav-link">Провести мероприятие</a>
-          <a class="page-footer__nav-link">Стать арендатором</a>
-          <a class="page-footer__nav-link">Наши проекты</a>
-          <a class="page-footer__nav-link">Контакты</a>
+          <a class="page-footer__nav-link" href="events.html">Календарь мероприятий</a>
+          <a class="page-footer__nav-link" href="index.html">Провести мероприятие</a>
+          <a class="page-footer__nav-link" href="index.html">Стать арендатором</a>
+          <a class="page-footer__nav-link" href="index.html#about">Наши проекты</a>
+          <a class="page-footer__nav-link" href="index.html#contacts">Контакты</a>
         </nav>
         <form class="page-footer__form subscribe" action="https://jsonplaceholder.typicode.com/posts" method="post" id="js-subscribeForm">
           <h4 class="subscribe__title">Подпишись и будь в курсе происходящего</h4>
@@ -331,15 +330,25 @@
           </label>
         </form>
       </div>
+
+      <div class="page-footer__contacts hidden1340more">
+        <svg class="link__icon" width="58" height="58">
+          <use xlink:href="assets/icons/symbols.svg#insta"></use>
+        </svg>
+        <svg class="link__icon" width="58" height="58">
+          <use xlink:href="assets/icons/symbols.svg#vk"></use>
+        </svg>
+      </div>
+
       <div class="page-footer__about">
         <div class="page-footer__pp page-footer__down-block">
-          <p>© Millennials 2022</p>
+          <p class="page-footer__pp-copyright page-footer__text">© Millennials 2022</p>
           <div class="page-footer__pp-actions">
-            <h4>Политика конфиденциальности</h4>
-            <h4>Cookies</h4>
+            <h4 class="page-footer__pp-actions_title page-footer__text">Политика конфиденциальности</h4>
+            <h4 class="page-footer__pp-actions_title page-footer__text">Cookies</h4>
           </div>
         </div>
-        <div class="page-footer__contacts page-footer__down-block">
+        <div class="page-footer__contacts page-footer__down-block hidden768">
           <svg class="link__icon" width="58" height="58">
             <use xlink:href="assets/icons/symbols.svg#insta"></use>
           </svg>
@@ -348,7 +357,7 @@
           </svg>
         </div>
         <div class="page-footer__description page-footer__down-block">
-          <p>Создание и продвижение</p>
+          <p class="page-footer__text">Создание и продвижение</p>
           <svg class="link__icon" width="56" height="17">
             <use xlink:href="assets/icons/symbols.svg#tagree"></use>
           </svg>
@@ -448,7 +457,7 @@
             </label>
 
             <label class="form__check form__check--mb40 check">
-              <span class="check__label">Я соглашаюсь с пользовательским соглашением и с политикой использования персональных данных </span>
+              <span class="form__check-label check__label">Я соглашаюсь с пользовательским соглашением и с политикой использования персональных данных </span>
               <input type="checkbox" class="check__input" name="agree" required />
               <span class="check__mark"></span>
             </label>

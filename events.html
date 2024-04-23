@@ -17,16 +17,16 @@
 <body class="body">
   <header class="page-header">
     <div class="page-header__container">
-      <a href="#" class="page-header__logo">
+      <a href="index.html" class="page-header__logo">
         <svg class="page-header__logo-icon" width="202" height="147" viewBox="0 0 202 147">
           <use xlink:href="assets/icons/symbols.svg#logo"></use>
         </svg>
       </a>
       <nav class="page-header__nav">
-        <a href="#" class="page-header__nav-link">Мероприятия</a>
-        <a href="#" class="page-header__nav-link">Блог</a>
-        <a href="#" class="page-header__nav-link">О нас</a>
-        <a href="#" class="page-header__nav-link">Контакты</a>
+        <a href="events.html" class="page-header__nav-link">Мероприятия</a>
+        <a href="index.html#blog" class="page-header__nav-link">Блог</a>
+        <a href="index.html#about" class="page-header__nav-link">О нас</a>
+        <a href="index.html#contacts" class="page-header__nav-link">Контакты</a>
 
         <div class="page-header__nav-user">
           <a href="#" class="page-header__nav-user-link">
@@ -55,18 +55,18 @@
 
   <main class="main">
     <div class="breadcrumbs">
-      <a href="#" class="breadcrumbs__link">Главная</a>
-      <a href="#" class="breadcrumbs__link">Раздел</a>
-      <a href="#" class="breadcrumbs__link">Страница раздела</a>
+      <a href="index.html" class="breadcrumbs__link">Главная</a>
+      <a href="events.html" class="breadcrumbs__link">Мероприятия</a>
+      <a href="#" class="breadcrumbs__link">Вечер | The Best of Sade</a>
     </div>
     <div class="events">
       <section class="listing events__listing">
-        <h2 class="listing__title section-title">Мероприятия</h2>
+        <h2 class="events__title section-title">Мероприятия</h2>
 
-        <div class="listing__events-list ">
+        <div class="listing__events-list">
           <!-- prettier-ignore -->
           <article class="event-card  listing__event-card">
-            <a href="#" class="event-card__link">
+            <a href="event.html" class="event-card__link">
               <picture class="event-card__picture">
                 <img src="assets/images/nirvana.jpg" alt="nirvana" class="event-card__img" />
               </picture>
@@ -76,7 +76,7 @@
             </a>
           </article>
           <article class="event-card  listing__event-card">
-            <a href="#" class="event-card__link">
+            <a href="event.html" class="event-card__link">
               <picture class="event-card__picture">
                 <img src="assets/images/stuff.jpg" alt="stuff" class="event-card__img" />
               </picture>
@@ -86,7 +86,7 @@
             </a>
           </article>
           <article class="event-card  listing__event-card">
-            <a href="#" class="event-card__link">
+            <a href="event.html" class="event-card__link">
               <picture class="event-card__picture">
                 <img src="assets/images/sade.jpg" alt="sade" class="event-card__img" />
               </picture>
@@ -96,7 +96,7 @@
             </a>
           </article>
           <article class="event-card  listing__event-card">
-            <a href="#" class="event-card__link">
+            <a href="event.html" class="event-card__link">
               <picture class="event-card__picture">
                 <img src="assets/images/malevich.jpg" alt="malevich" class="event-card__img" />
               </picture>
@@ -106,7 +106,7 @@
             </a>
           </article>
           <article class="event-card  listing__event-card">
-            <a href="#" class="event-card__link">
+            <a href="event.html" class="event-card__link">
               <picture class="event-card__picture">
                 <img src="assets/images/tatler.jpg" alt="tatler" class="event-card__img" />
               </picture>
@@ -116,7 +116,7 @@
             </a>
           </article>
           <article class="event-card  listing__event-card">
-            <a href="#" class="event-card__link">
+            <a href="event.html" class="event-card__link">
               <picture class="event-card__picture">
                 <img src="assets/images/hatters.jpg" alt="hatters" class="event-card__img" />
               </picture>
@@ -301,11 +301,11 @@
       <div class="page-footer__border"></div>
       <div class="page-footer__wrapper">
         <nav class="page-footer__nav">
-          <a class="page-footer__nav-link">Календарь мероприятий</a>
-          <a class="page-footer__nav-link">Провести мероприятие</a>
-          <a class="page-footer__nav-link">Стать арендатором</a>
-          <a class="page-footer__nav-link">Наши проекты</a>
-          <a class="page-footer__nav-link">Контакты</a>
+          <a class="page-footer__nav-link" href="events.html">Календарь мероприятий</a>
+          <a class="page-footer__nav-link" href="index.html">Провести мероприятие</a>
+          <a class="page-footer__nav-link" href="index.html">Стать арендатором</a>
+          <a class="page-footer__nav-link" href="index.html#about">Наши проекты</a>
+          <a class="page-footer__nav-link" href="index.html#contacts">Контакты</a>
         </nav>
         <form class="page-footer__form subscribe" action="https://jsonplaceholder.typicode.com/posts" method="post" id="js-subscribeForm">
           <h4 class="subscribe__title">Подпишись и будь в курсе происходящего</h4>
@@ -324,15 +324,25 @@
           </label>
         </form>
       </div>
+
+      <div class="page-footer__contacts hidden1340more">
+        <svg class="link__icon" width="58" height="58">
+          <use xlink:href="assets/icons/symbols.svg#insta"></use>
+        </svg>
+        <svg class="link__icon" width="58" height="58">
+          <use xlink:href="assets/icons/symbols.svg#vk"></use>
+        </svg>
+      </div>
+
       <div class="page-footer__about">
         <div class="page-footer__pp page-footer__down-block">
-          <p>© Millennials 2022</p>
+          <p class="page-footer__pp-copyright page-footer__text">© Millennials 2022</p>
           <div class="page-footer__pp-actions">
-            <h4>Политика конфиденциальности</h4>
-            <h4>Cookies</h4>
+            <h4 class="page-footer__pp-actions_title page-footer__text">Политика конфиденциальности</h4>
+            <h4 class="page-footer__pp-actions_title page-footer__text">Cookies</h4>
           </div>
         </div>
-        <div class="page-footer__contacts page-footer__down-block">
+        <div class="page-footer__contacts page-footer__down-block hidden768">
           <svg class="link__icon" width="58" height="58">
             <use xlink:href="assets/icons/symbols.svg#insta"></use>
           </svg>
@@ -341,7 +351,7 @@
           </svg>
         </div>
         <div class="page-footer__description page-footer__down-block">
-          <p>Создание и продвижение</p>
+          <p class="page-footer__text">Создание и продвижение</p>
           <svg class="link__icon" width="56" height="17">
             <use xlink:href="assets/icons/symbols.svg#tagree"></use>
           </svg>
@@ -349,6 +359,18 @@
       </div>
     </div>
   </footer>
+
+  <script src="scripts/jquery-3.6.0.min.js"></script>
+
+  <script src="scripts/jquery.validate.min.js"></script>
+  <script src="scripts/jquery.validate-init.js"></script>
+
+  <script src="scripts/jquery.selectric.min.js"></script>
+  <script src="scripts/jquery.mask.min.js"></script>
+  <script src="scripts/datepicker.min.js"></script>
+
+  <script src="scripts/swiper.min.js"></script>
+  <script src="scripts/main.min.js"></script>
 </body>
 
 </html>
