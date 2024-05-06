@@ -6,10 +6,20 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scaleble=no">
 
   <title>Lenni Art</title>
+  <meta name="keywords" content="Lenni Art, пространство, мероприятия">
+  <meta property="og:title" content="Lenni Art" />
+  <meta property="og:description" content="Арт пространство для людей, горящих сердцем и делом" />
+  <meta property="og:image" content="/assets/images/lenni-art.jpg">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lenni-art.ru/" />
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/assets/favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/styles.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://db.onlinewebfonts.com/c/23b97b9820f87d47fb167a183d80c82f?family=Quantify-Bold" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -128,12 +138,12 @@
       </section>
       <div class="events__drop-down">
         <span>Показать еще</span>
-        <svg class="header__logo-img">
+        <svg class="header__logo-img" width="60" height="91">
           <use xlink:href="assets/icons/symbols.svg#showDown"></use>
         </svg>
       </div>
       <section class="events__services">
-        <h2 class="section-title">Дополнительные услуги</h2>
+        <h2 class="events__services-title section-title">Дополнительные услуги</h2>
         <p class="events__services-description">
           Перед запуском проекта, мы подготавливаем подробную смету и согласуем
           ее с клиентом. Убедившись, что все пожеланию учтены и мы можем приступать
@@ -248,8 +258,8 @@
   <section class="offers events__offers">
     <p class="offers__title-secondary">я хочу:</p>
     <div class="home__offers-actions">
-      <div class="btn offers__btn btn--red" id="js-eventOpenBtn">Провести мероприятие</div>
-      <div class="btn offers__btn btn--opacity">Стать арендатором</div>
+      <button type="button" class="btn offers__btn btn--red" id="js-eventOpenBtn">Провести мероприятие</button>
+      <button type="button" class="btn offers__btn btn--opacity">Стать арендатором</button>
     </div>
   </section>
   <section class="event__system-descr system-descr">
@@ -275,8 +285,10 @@
         <h4 class="system-descr__title">Контакты</h4>
         <div>
           <p class="system-descr__description">Отдел организации мероприятий</p>
-          <p class="system-descr__description">+7 499 350 0730</p>
-          <p class="system-descr__description">hi@tagree.ru</p>
+          <div>
+            <a href="tel:84993500730" class="system-descr__description">+7 499 350 0730</a>
+          </div>
+          <a href="mailto:hi@tagree.ru" class="system-descr__description">hi@tagree.ru</a>
         </div>
       </div>
     </div>
@@ -337,23 +349,27 @@
         <div class="page-footer__pp page-footer__down-block">
           <p class="page-footer__pp-copyright page-footer__text">© Millennials 2022</p>
           <div class="page-footer__pp-actions">
-            <h4 class="page-footer__pp-actions_title page-footer__text">Политика конфиденциальности</h4>
-            <h4 class="page-footer__pp-actions_title page-footer__text">Cookies</h4>
+            <a href="https://tilda.cc/ru/privacy-generator/" target="_blank" class="page-footer__pp-actions_title page-footer__text">
+              Политика конфиденциальности
+            </a>
+            <a href="#" class="page-footer__pp-actions_title page-footer__text">Cookies</a>
           </div>
         </div>
         <div class="page-footer__contacts page-footer__down-block hidden768">
-          <svg class="link__icon" width="58" height="58">
-            <use xlink:href="assets/icons/symbols.svg#insta"></use>
-          </svg>
-          <svg class="link__icon" width="58" height="58">
-            <use xlink:href="assets/icons/symbols.svg#vk"></use>
-          </svg>
+          <a href="https://vk.com/tagree" target="_blank">
+            <svg class="link__icon" width="58" height="58">
+              <use xlink:href="assets/icons/symbols.svg#insta"></use>
+            </svg>
+          </a>
+          <a href="https://vk.com/tagree" target="_blank">
+            <svg class="link__icon" width="58" height="58">
+              <use xlink:href="assets/icons/symbols.svg#vk"></use>
+            </svg>
+          </a>
         </div>
         <div class="page-footer__description page-footer__down-block">
           <p class="page-footer__text">Создание и продвижение</p>
-          <svg class="link__icon" width="56" height="17">
-            <use xlink:href="assets/icons/symbols.svg#tagree"></use>
-          </svg>
+          <a href="https://tagree.ru/" target="_blank" class="tagree">tagree</a>
         </div>
       </div>
     </div>
